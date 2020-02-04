@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_map">
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.isteam.ulsumap.ui.map.MapFragment"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/nav_change"
+        android:name="com.isteam.ulsumap.ui.change.ChangeFragment"
+        android:label="@string/menu_change"
+        tools:layout="@layout/fragment_change" />
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.isteam.ulsumap.ui.search.SearchFragment"
+        android:label="@string/menu_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.isteam.ulsumap.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_scanner"
+        android:name="com.isteam.ulsumap.ui.scanner.ScannerFragment"
+        android:label="@string/menu_scanner"
+        tools:layout="@layout/fragment_scanner" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.isteam.ulsumap.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/nav_download"
+        android:name="com.isteam.ulsumap.ui.download.DownloadFragment"
+        android:label="@string/menu_download"
+        tools:layout="@layout/fragment_download" />
+</navigation>
